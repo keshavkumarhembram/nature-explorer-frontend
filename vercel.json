@@ -1,0 +1,12 @@
+{
+    "rewrites": [
+        {
+            "source": "/api/:path(.*)",
+            "destination": "https://nature-explorer-backend-412611.el.r.appspot.com/api/:path"
+        },
+        {
+            "source": "/(.*)",
+            "destination": "/"
+        }
+    ]
+  }
