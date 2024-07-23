@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 function TourCardButton({price, ratingsAverage, ratingsQuantity, slug}) {
-    console.log(price, ratingsAverage, slug);
   return (
     <div className='tour-card__button tour-card__rating tour-card__price'>
         <div className='tour-card-button-container bg-[#f7f7f7] flex justify-between items-center p-4'>

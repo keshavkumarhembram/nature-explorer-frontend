@@ -1,8 +1,7 @@
 import { Outlet } from "react-router-dom";
 
 import NavBar from "../components/NavBar";
-
-import { getTours } from "../Home";
+import Footer from '../components/Footer';
 
 
 export default function Root() {
@@ -16,10 +15,7 @@ export default function Root() {
         <div id="details">
         <Outlet />
         </div>
-
-        <footer className="h-[3000px]">
-
-        </footer>
+        <Footer />
         </>
     );
 }

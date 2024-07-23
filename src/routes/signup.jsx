@@ -29,7 +29,6 @@ import { useCookies } from 'react-cookie';
 
 function Signup() {
     const [cookies, setCookies] = useCookies([]);
-    console.log(cookies);
 
     async function signup() {
       try {
@@ -49,7 +48,6 @@ function Signup() {
           //     withCredentials: true,
           // }
         )
-          console.log(response.data.token);
           setCookies('jwt', response.data.token, {
               path: '/',
           });
@@ -72,14 +70,14 @@ function Signup() {
       });
       return (
         <main className='min-h-[100vh] bg-gray-200 flex items-center justify-center'>
-          <div className='w-[80%] sm:w-[100%] my-[100px] sm:my-0 bg-white p-8 shadow-xl'>
+          <div className='w-[90%] sm:w-[500px] my-[100px] bg-white p-8 shadow-xl'>
           <h1 className='uppercase text-3xl font-semibold bg-gradient-to-r from-[#7dd56f] to-[#28b487] bg-clip-text text-transparent mb-8'>Create your account</h1>
           <form onSubmit={formik.handleSubmit}>
             <Input name='name' formik={formik} label="Name" />
             <Input name='email' formik={formik} label="Email Address" />
             <Input name='password' formik={formik} label="Password" />
             <Input name='confirmPassword' formik={formik} label="Confirm Password" />
-            <button className='uppercase text-lg bg-green-400 text-white px-8 py-2 rounded-full' type="submit">signup</button>
+            <button className='uppercase text-lg bg-green-400 hover:bg-green-500 hover:shadow-md ease-in-out text-white px-8 py-2 rounded-full' type="submit">signup</button>
           </form>
           </div>
         </main>

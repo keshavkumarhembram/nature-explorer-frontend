@@ -9,7 +9,7 @@ function DetailsLeftContainer({nextDate, difficulty, participants, rating, guide
   const year = date.getFullYear();
   return (
     <div>
-      <div className='sm: min-w-[400px] w-50%] mb-12'>
+      <div className='w-[200px] sm:min-w-[400px] w-50%] mb-12'>
         <h2 className='uppercase text-3xl font-semibold bg-gradient-to-r from-[#7dd56f] to-[#28b487] bg-clip-text text-transparent my-4'>Quick Facts</h2>
         <div >
           <p className='my-4'><span className='field font-bold uppercase text-gray-400 '>Next Date </span> <span className='value'>{month} {year}</span></p>

@@ -8,7 +8,7 @@ function Home() {
   const { tours } = useLoaderData();
   return (
     <main className='mx-auto'>
-        <div className='home-container w-[80%] my-16 mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8'>
+        <div className='home-container w-[96%] md:w-[90%] lg:w-[80%] my-8 lg:my-16 flex items-center flex-col mx-auto sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-8'>
             {tours.map(tour => <TourCard key={tour.slug} tour={tour}/>)}
         </div>
     </main>
